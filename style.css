@@ -1,0 +1,11 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+.pokedex{
+
+  display: inline-block;
+  text-align: left;
+}
+div.container {
+  text-align: center;
+}
