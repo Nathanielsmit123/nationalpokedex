@@ -13,7 +13,7 @@ async function fetchdata() {
         console.log(data);
         lod.style.display = 'none';
         if (data.id < 387){
-            pokemonsprite = data.sprites.versions["other"]["dream_world"].front_default;
+            pokemonsprite = data.sprites.versions.other.dream_world.front_default;
         } else{
             pokemonsprite = data.sprites.front_default;
         }
