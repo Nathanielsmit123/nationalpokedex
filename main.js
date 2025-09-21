@@ -12,11 +12,7 @@ async function fetchdata() {
         data = await ((await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonname}`)).json());
         console.log(data);
         lod.style.display = 'none';
-        if (data.id < 387){
-            pokemonsprite = data.sprites.versions.other.dream_world.front_default;
-        } else{
-            pokemonsprite = data.sprites.front_default;
-        }
+        pokemonsprite = data.sprites.front_default;
 
         const img = document.getElementById('Pokemonsprite');
         img.style = `width = "10000" height = "10000"`;
